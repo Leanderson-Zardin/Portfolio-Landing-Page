@@ -1,0 +1,133 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: rgb(139, 138, 138);
+}
+
+nav {
+  height: 10rem;
+  justify-content: space-between;
+}
+
+nav,
+.logo,
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo p {
+  font-size: 3rem;
+  font-family: "Arvo";
+}
+.logo figure {
+  width: 7rem;
+}
+.logo figure img {
+  width: 100%;
+}
+
+nav ul {
+  gap: 5rem;
+}
+nav ul li a{
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+}
+
+.toggle {
+  width: 4rem;
+  height: 5rem;
+  display: none;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: center;
+}
+.line {
+  width: 100%;
+  height: .5rem;
+  border-radius: 1rem;
+  background: white;
+  display: block;
+}
+
+.principal-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15rem;
+  height: calc(100vh - 10rem);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.principal-section figure {
+  width: 50%;
+  max-height: calc(100vh - 10rem);
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+}
+.principal-section figure img {
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: "Arvo";
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin: 1rem 0rem;
+}
+
+.principal-section p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.principal-section p span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.principal-section a.cv {
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: white;
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+}
+
+.social-network {
+  display: flex;
+  margin-top: 5rem;
+  gap: 3rem;
+  margin: 10rem auto 0rem;
+  justify-content: center;
+}
+.social-network a img {
+  width: 4rem;
+}
+
+.principal-section figure img.icon {
+  width: 7%;
+  position: absolute;
+  right: 10rem;
+}
+.html {
+  top: 10%;
+}
+.css {
+  top: 25%;
+}
+.js {
+  top: 40%;
+}

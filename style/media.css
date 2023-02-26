@@ -1,0 +1,64 @@
+@media (max-width: 1220px) {
+  header {
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  .welcome {
+    text-align: center;
+  }
+
+  .principal-section {
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 4rem;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .principal-section figure {
+    position: relative;
+    bottom: 0;
+    width: min(50rem, 80%)
+  }
+  .social-network {
+    margin-top: 7rem;
+  }
+  .principal-section figure img.icon {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .toggle {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .logo p {
+    font-size: 2rem;
+  }
+  .logo figure {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo figure {
+    display: none;
+  }
+}

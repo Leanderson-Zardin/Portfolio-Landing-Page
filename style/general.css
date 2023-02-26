@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@400;500&display=swap');
 
 :root {
-  --primary-color: #000033;
+  --primary-color: #0b0b0d;
   --secondary-color: #100153;
 }
 
@@ -12,4 +12,14 @@
   list-style: none;
   text-decoration: none;
   font-size: 10px;
+  font-family: "Montserrat";
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: min(164rem, 90%);
+  margin: 0 auto;
 }
