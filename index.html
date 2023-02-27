@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="style/media.css">
 </head>
 <body>
+  <div class="background">
+    <img src="img/textura5.jpg" alt="">
+  </div>
   <header>
-    <div class="container">
+    <section class="container">
       <nav>
         <div class="logo">
           <figure>
@@ -24,13 +27,13 @@
         </div>
         <ul>
           <li>
-            <a href="#">Início</a>
+            <a href="#home">Início</a>
           </li>
           <li>
-            <a href="#">Sobre</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="#">Projetos</a>
+            <a href="#works">Projetos</a>
           </li>
           <li>
             <a href="#">Contato</a>
@@ -42,7 +45,7 @@
           <div class="line"></div>
         </div>
       </nav>
-      <div class="principal-section">
+      <div class="principal-section" id="home">
         <div class="welcome">
           <h1>Olá! Meu nome é <br> Leanderson Zardin</h1>
           <p>Programador <span>Frontend</span></p>
@@ -66,20 +69,105 @@
           <img src="img/js.svg" alt="javascript" class="icon js">
         </figure>
       </div>
-    </div>
+    </section>
   </header>
   <main>
-    <div class="container">
-      <figure>
-        <img src="img/marsmok-image-2.jpg" alt="marsmok">
-      </figure>
-      <div class="about">
-        <h2>Sobre Mim</h2>
-        <p>
-
-        </p>
+    <section class="first-section" id="about">
+      <div class="container about-section">
+        <figure>
+          <img src="img/marsmok-image-4.png" alt="marsmok">
+        </figure>
+        <div class="about">
+          <h2>Sobre Mim</h2>
+          <p>
+            Olá! Me chamo Leanderson e tenho 18 anos.
+          </p>
+          <p>
+            Eu sou um estudante de programação na linguagem Javascript e procuro me especializar na área de Desenvolvimento Web. Tenho ciência do que a tecnologia nos proporciona e é isso o que me motiva a seguir em frente com meus objetivos.
+          </p>
+          <p>
+            Fiz um estágio por quase 2 anos, trabalhando na recepção do CRAS Anair, em Cachoeirinha - RS. Pude aprimorar habilidades como comunicação, relações públicas e trabalho em equipe. Atualmente, estou em busca de clientes para ajudá-los a colocar seus Negócios na internet e, é claro, para adquirir experiência.
+          </p>
+          <a href="cv/CV Leanderson Zardin.pdf" download class="cv">Baixar CV</a>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="work-section" id="works">
+      <div class="container work-container">
+        <h2>Projetos</h2>
+        <span>OBS: Estes projetos são voltados para estudos e podem mudar a qualquer momento!</span>
+        <div class="grid-work">
+          <div class="work">
+            <figure>
+              <img src="img/projeto2.png" alt="proejto 1">
+            </figure>
+            <h3>Order Summary - Frontend Mentor</h3>
+            <p>
+              Código de solução do desafio proposto pela página Frontend Mentor.
+            </p>
+            <div class="work-button">
+              <button>
+                <a href="https://older-summary-component.vercel.app/">
+                  Ver Projeto
+                </a>
+              </button>
+              <button>
+                <a href="https://github.com/Leanderson-Zardin/Frontend-Mentor-Challenge/tree/master/Older%20Summary%20Component">
+                  Repositório
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="work">
+            <figure>
+              <img src="img/projeto1.png" alt="proejto 1">
+            </figure>
+            <h3>Página Estática - Marsmok</h3>
+            <p>
+              Esta página foi criada para praticar animações em CSS.
+            </p>
+            <div class="work-button">
+              <button>
+                <a href="https://marsmok-responsive-layout.vercel.app/">
+                  Ver Projeto
+                </a>
+              </button>
+              <button>
+                <a href="https://github.com/Leanderson-Zardin/Responsive-Layout">
+                  Repositório
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="work">
+            <figure>
+              <img src="img/projeto3.png" alt="proejto 1">
+            </figure>
+            <h3>Página Estática - Huddle</h3>
+            <p>
+              Código de solução do desafio proposto pela página Frontend Mentor.
+            </p>
+            <div class="work-button">
+              <button>
+                <a href="https://huddle-frontend-challenge.vercel.app/">
+                  Ver Projeto
+                </a>
+              </button>
+              <button>
+                <a href="https://github.com/Leanderson-Zardin/Frontend-Mentor-Challenge/tree/master/Huddle%20LP%20-%202">
+                  Repositório
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="more-work">
+          <a href="https://linktr.ee/Leanderson_Zardin_Portfolio">
+            Ver Mais Projetos
+          </a>
+        </button>
+      </div>
+    </section>
   </main>
 </body>
 </html>

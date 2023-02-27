@@ -1,3 +1,10 @@
+@media (max-width: 1250px) {
+  .grid-work {
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+  }
+}
+
 @media (max-width: 1220px) {
   header {
     height: 100%;
@@ -28,6 +35,24 @@
   .principal-section figure img.icon {
     display: none;
   }
+
+  .about-section {
+    flex-direction: column;
+  }
+  .about {
+    width: 90%;
+    color: white;
+    text-align: center;
+  }
+  .first-section a {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  header {
+    background-position: left;
+  }
 }
 
 @media (max-width: 800px) {
@@ -54,6 +79,12 @@
   }
   .logo figure {
     width: 5rem;
+  }
+}
+
+@media (max-width: 344px) {
+  .work button:first-of-type {
+    margin-bottom: 1rem;
   }
 }
 

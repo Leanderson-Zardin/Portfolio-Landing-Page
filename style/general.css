@@ -13,13 +13,31 @@
   text-decoration: none;
   font-size: 10px;
   font-family: "Montserrat";
+  color: white;
 }
 
 body {
-  width: 100%;
+  width: 100%;  
 }
 
 .container {
   width: min(164rem, 90%);
   margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(139, 138, 138);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.background {
+  position: fixed;
+  z-index: -10;
+  filter: blur(4px);
 }
