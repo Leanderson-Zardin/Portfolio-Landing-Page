@@ -44,9 +44,12 @@ p {
 button {
   border: none;
   padding: 1rem 3rem;
-  font-size: 1.8rem;
   border-radius: 1rem;
+}
+
+button a {
   color: black;
+  font-size: 1.8rem;
 }
 
 figure {

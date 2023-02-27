@@ -161,3 +161,7 @@ textarea:focus {
   font-size: 1.6rem;
   font-weight: 500;
 }
+
+.contact-section .social-network {
+  flex-wrap: wrap;
+}
