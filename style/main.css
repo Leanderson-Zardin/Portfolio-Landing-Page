@@ -71,6 +71,10 @@ h2 {
   border-radius: 1rem;
   padding: 1rem 1.5rem;
   border: none;
+  transition: all .15s;
+}
+.work button:hover {
+  opacity: .6;
 }
 .work button a {
   font-size: 1.8rem;
@@ -99,6 +103,10 @@ h2 {
   border-radius: 2rem;
   padding: 1rem 2rem;
   margin-top: 4rem;
+  transition: all .15s;
+}
+.more-work:hover {
+  background: rgb(165, 160, 160);
 }
 .more-work a {
   font-size: 1.8rem;

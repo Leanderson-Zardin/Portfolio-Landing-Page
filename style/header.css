@@ -36,6 +36,14 @@ nav ul li a{
   font-weight: 500;
   color: white;
 }
+nav ul li hr {
+  transform-origin: 0px 0px;
+  transform: scaleX(0);
+  transition: all .15s;
+}
+nav ul li:hover hr {
+  transform: scaleX(1);
+}
 
 .toggle {
   width: 4rem;
@@ -105,7 +113,11 @@ h1 {
   margin-top: 2rem;
   font-size: 1.8rem;
   font-weight: 500;
-
+  transition: all .15s;
+}
+.principal-section a.cv:hover,
+.about-section a.cv:hover {
+  background: rgb(165, 160, 160);
 }
 
 .social-network {
@@ -117,6 +129,10 @@ h1 {
 }
 .social-network a img {
   width: 4rem;
+  transition: all .15s;
+}
+.social-network a img:hover {
+  filter: opacity(.6);
 }
 
 .principal-section figure img.icon {
