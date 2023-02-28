@@ -1,12 +1,15 @@
+main {
+  background-image: url(/img/textura5.jpg);
+}
+
 /*----------------- ABOUT SECTION --------------------*/
 .first-section {
   border: 1px solid white;
 }
-
 .about-section {
   display: flex;
   align-items: center;
-  margin: 5rem auto;
+  padding: 5rem 0rem;
 }
 .about-section figure img {
   width: 100%;
