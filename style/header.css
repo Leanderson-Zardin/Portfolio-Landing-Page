@@ -8,6 +8,8 @@ header {
 nav {
   height: 10rem;
   justify-content: space-between;
+  animation: show .2s forwards;
+  opacity: 0;
 }
 
 nav,
@@ -111,7 +113,10 @@ nav ul li:hover hr {
 }
 
 /*----------------- PRINCIPAL SECTION --------------------*/
-
+.welcome {
+  animation: show .2s .2s forwards;
+  opacity: 0;
+}
 .principal-section {
   display: flex;
   align-items: center;
@@ -131,6 +136,8 @@ nav ul li:hover hr {
   bottom: 0;
   right: 0;
   border-bottom: 1px solid white;
+  animation: show .2s .4s forwards;
+  opacity: 0;
 }
 .principal-section figure img {
   width: 100%;

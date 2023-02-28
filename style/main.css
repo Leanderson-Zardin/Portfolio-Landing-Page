@@ -10,6 +10,8 @@ main {
   display: flex;
   align-items: center;
   padding: 5rem 0rem;
+  animation: show .2s .6s forwards;
+  opacity: 0;
 }
 .about-section figure img {
   width: 100%;
@@ -41,6 +43,11 @@ h2 {
   background-image: url(/img/textura4.jpg);
   padding: 10rem 0rem;
   text-align: center;
+}
+
+.work-container {
+  animation: show .2s .8s forwards;
+  opacity: 0;
 }
 
 .grid-work {
@@ -123,6 +130,11 @@ h2 {
   padding: 10rem 0rem;
   text-align: center;
   border: 1px solid white;
+}
+
+.contact-container {
+  animation: show .2s 1s forwards;
+  opacity: 0;
 }
 
 .contact-section form label{
