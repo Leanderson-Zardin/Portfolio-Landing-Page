@@ -2,8 +2,6 @@ footer {
   background: black;
   padding: 5rem 0rem;
   text-align: center;
-  animation: show .2s 1.2s forwards;
-  opacity: 0;
 }
 
 footer h3 {
@@ -14,4 +12,9 @@ footer h3 {
 footer p {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.footer-container {
+  animation: show .2s 1.2s forwards;
+  opacity: 0;
 }

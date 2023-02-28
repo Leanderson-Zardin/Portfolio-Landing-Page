@@ -8,8 +8,6 @@ header {
 nav {
   height: 10rem;
   justify-content: space-between;
-  animation: show .2s forwards;
-  opacity: 0;
 }
 
 nav,
@@ -23,12 +21,21 @@ nav ul {
 .logo p {
   font-size: 3rem;
   font-family: "Arvo";
+  animation: show .2s forwards;
+  opacity: 0;
 }
 .logo figure {
   width: 7rem;
+  animation: show .2s forwards;
+  opacity: 0;
 }
 .logo figure img {
   width: 100%;
+}
+
+.nav-ul {
+  animation: show .2s forwards;
+  opacity: 0;
 }
 
 nav ul {
@@ -58,6 +65,7 @@ nav ul li:hover hr {
   gap: .5rem;
   justify-content: center;
   cursor: pointer;
+  animation: show .2s;
 }
 .line {
   width: 100%;
@@ -89,27 +97,26 @@ nav ul li:hover hr {
 #toggle.active .menu-hidden {
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(/img/texture3.jpg);
   background-position: left;
   z-index: 10;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #toggle.active .menu-hidden ul {
-  display: block;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  z-index: inherit;
 }
 #toggle.active .menu-hidden ul li a{
   font-size: 4rem;
+  z-index: inherit;
 }
 
 /*----------------- PRINCIPAL SECTION --------------------*/
@@ -126,6 +133,7 @@ nav ul li:hover hr {
   width: 100%;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .principal-section figure {
