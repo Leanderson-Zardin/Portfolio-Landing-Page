@@ -44,14 +44,17 @@ nav ul li hr {
 nav ul li:hover hr {
   transform: scaleX(1);
 }
-
-.toggle {
+#check {
+  visibility: hidden;
+}
+#toggle {
   width: 4rem;
   height: 5rem;
   display: none;
   flex-direction: column;
   gap: .5rem;
   justify-content: center;
+  cursor: pointer;
 }
 .line {
   width: 100%;
@@ -59,7 +62,39 @@ nav ul li:hover hr {
   border-radius: 1rem;
   background: white;
   display: block;
+  transition: all .15s;
+  z-index: inherit;
 }
+
+#toggle.active .top {
+  transform: translateY(1rem) rotate(45deg);
+}
+#toggle.active .mid {
+  transform: scale(0);
+}
+#toggle.active .bottom {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+
+#toggle.active {
+  position: absolute;
+  top: 2.5rem;
+  right: 5%;
+  z-index: 100;
+}
+
+#toggle.active .menu-hidden {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: gray;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/*----------------- PRINCIPAL SECTION --------------------*/
 
 .principal-section {
   display: flex;

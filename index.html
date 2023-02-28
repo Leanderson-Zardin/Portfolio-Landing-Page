@@ -43,10 +43,31 @@
             <hr>
           </li>
         </ul>
-        <div class="toggle">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <input type="checkbox" id="check">
+        <div id="toggle">
+            <div class="line top"></div>
+            <div class="line mid"></div>
+            <div class="line bottom"></div>
+            <div class="menu-hidden">
+              <ul>
+                <li>
+                  <a href="#home">Início</a>
+                  <hr>
+                </li>
+                <li>
+                  <a href="#about">Sobre</a>
+                  <hr>
+                </li>
+                <li>
+                  <a href="#works">Projetos</a>
+                  <hr>
+                </li>
+                <li>
+                  <a href="#contact">Contato</a>
+                  <hr>
+                </li>
+              </ul>
+            </div>
         </div>
       </nav>
       <div class="principal-section" id="home">
@@ -218,5 +239,16 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('toggle');
+    let show = true;
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle('active');
+      document.body.style.overflow = show ? "hidden" : "initial";
+      show = !show; 
+    })
+
+  </script>
 </body>
 </html>
